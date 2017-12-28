@@ -15,7 +15,7 @@ import okhttp3.OkHttpClient;
 
 @SpringBootApplication
 public class CrudDemoApplication {
-	    @Bean
+	@Bean
     public Tracer zipkinTracer() {
         	OkHttpSender okHttpSender = OkHttpSender.builder()
                 	.encoding(Encoding.JSON)
